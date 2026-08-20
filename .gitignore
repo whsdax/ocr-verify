@@ -1,0 +1,49 @@
+# 配置文件(含 API Key)
+config.yaml
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 虚拟环境(用户可能直接在项目下建)
+venv/
+.venv/
+
+# 测试与覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 模型与数据集(自动下载/生成)
+datasets/*/
+!datasets/.gitkeep
+models/
+
+# 评测报告(自动生成的 HTML/JSON)
+reports/*
+!reports/.gitkeep
+# 例外:这份真实 API 评测报告是 README 里那组数字的原始证据,随仓库提交
+!reports/benchmark_real.json
+
+# 个人材料,不进仓库
+PLAN.md
+docs/INTERVIEW_QA.md
+
+# IDE / 工具本地配置
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db

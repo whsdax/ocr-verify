@@ -1,0 +1,31 @@
+# 核心依赖
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+requests>=2.31.0
+pyyaml>=6.0
+
+# OCR 引擎
+# 第一层默认走 PaddleOCR,失败时代码会自动回落 RapidOCR(见 engines/paddle.py)。
+#
+# 注意 1:paddleocr 只是前端,真正的推理需要 paddlepaddle,且它不是 paddleocr 的
+#         安装依赖。只装 paddleocr 会在首次 predict 时报
+#         "A dependency error occurred during pipeline creation",然后被自动回落到
+#         RapidOCR。想真正用 Paddle 后端,请额外执行:  pip install paddlepaddle
+#         (CPU 版体积较大,约 1GB 级别;不装也能跑,只是第一层实际是 RapidOCR)
+# 注意 2:rapidocr-onnxruntime 已停止支持 Python 3.13(所有版本都是 Requires-Python <3.13),
+#         3.13 上必须用继任包 rapidocr。代码对两个包名都做了兼容 import。
+paddleocr>=3.0.0
+# paddlepaddle>=3.0.0            # 取消注释即启用真正的 Paddle 后端
+rapidocr-onnxruntime>=1.4.0; python_version < "3.13"
+rapidocr>=3.0.0; python_version >= "3.13"
+
+# 基线对照(可选,还需另外安装 Tesseract 本体并配置 PATH)
+# pytesseract
+
+# 评测报告可视化(可选,仅 benchmark/calibrate.py 画校准曲线时用到)
+matplotlib>=3.7.0
+
+# 测试
+pytest>=7.4.0
+pytest-cov>=4.1.0

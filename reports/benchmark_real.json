@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "sample_count": 150,
+    "config": {
+      "vlm": {
+        "enabled": true,
+        "protocol": "gemini",
+        "base_url": "https://api.claudecode.net.cn/api/gemini",
+        "model": "gemini-3.5-flash",
+        "api_key": "sk-a***1rdw",
+        "timeout_s": 30,
+        "max_retries": 2,
+        "retry_backoff_s": 1.0,
+        "temperature": 0.0,
+        "max_output_tokens": 2048,
+        "max_image_width": 1600,
+        "jpeg_quality": 85
+      },
+      "paddle": {
+        "backend": "auto",
+        "lang": "ch",
+        "use_gpu": false,
+        "det_db_thresh": 0.3,
+        "drop_score": 0.3
+      },
+      "router": {
+        "confidence_threshold": 0.7,
+        "escalate_on_empty": true,
+        "escalate_on_pattern_mismatch": true,
+        "escalate_on_box_overlap": true,
+        "box_overlap_threshold": 0.35,
+        "fallback_to_first_layer": true
+      },
+      "cache": {
+        "enabled": true,
+        "capacity": 512,
+        "use_perceptual": false,
+        "hamming_threshold": 3,
+        "dhash_size": 8,
+        "vlm_cost_per_call": 0.003,
+        "currency": "CNY"
+      },
+      "benchmark": {
+        "dataset_dir": "datasets",
+        "report_dir": "reports",
+        "ground_truth_file": "datasets/ground_truth.json",
+        "random_seed": 42,
+        "include_tesseract": false
+      },
+      "log_level": "INFO"
+    },
+    "dry_run": false
+  },
+  "metrics": [
+    {
+      "name": "纯 PaddleOCR",
+      "sample_count": 150,
+      "exact_match_rate": 0.8133,
+      "contains_match_rate": 0.8133,
+      "mean_char_acc": 0.9047,
+      "mean_cer": 0.0953,
+      "mean_latency_ms": 1472.92,
+      "p50_latency_ms": 1450.32,
+      "p95_latency_ms": 2011.82,
+      "escalation_count": 0,
+      "cache_hit_count": 0,
+      "degraded_count": 0,
+      "error_count": 0,
+      "by_perturbation": {
+        "blur_heavy": {
+          "count": 11,
+          "exact_match_rate": 0.0,
+          "mean_char_acc": 0.0823,
+          "escalation_count": 0,
+          "mean_latency_ms": 1479.95
+        },
+        "blur_light": {
+          "count": 17,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1429.25
+        },
+        "jpeg_low": {
+          "count": 8,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1521.95
+        },
+        "lowcontrast": {
+          "count": 14,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1389.52
+        },
+        "none": {
+          "count": 50,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1556.23
+        },
+        "occlusion_heavy": {
+          "count": 21,
+          "exact_match_rate": 0.5714,
+          "mean_char_acc": 0.8891,
+          "escalation_count": 0,
+          "mean_latency_ms": 1388.93
+        },
+        "occlusion_light": {
+          "count": 20,
+          "exact_match_rate": 0.75,
+          "mean_char_acc": 0.9129,
+          "escalation_count": 0,
+          "mean_latency_ms": 1480.95
+        },
+        "scale_down": {
+          "count": 9,
+          "exact_match_rate": 0.6667,
+          "mean_char_acc": 0.9862,
+          "escalation_count": 0,
+          "mean_latency_ms": 1348.22
+        }
+      }
+    },
+    {
+      "name": "双层方案",
+      "sample_count": 150,
+      "exact_match_rate": 0.88,
+      "contains_match_rate": 0.88,
+      "mean_char_acc": 0.97,
+      "mean_cer": 0.03,
+      "mean_latency_ms": 1669.96,
+      "p50_latency_ms": 1482.16,
+      "p95_latency_ms": 3774.06,
+      "escalation_count": 10,
+      "cache_hit_count": 0,
+      "degraded_count": 0,
+      "error_count": 0,
+      "by_perturbation": {
+        "blur_heavy": {
+          "count": 11,
+          "exact_match_rate": 0.8182,
+          "mean_char_acc": 0.9005,
+          "escalation_count": 9,
+          "mean_latency_ms": 3926.92
+        },
+        "blur_light": {
+          "count": 17,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1456.21
+        },
+        "jpeg_low": {
+          "count": 8,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1492.89
+        },
+        "lowcontrast": {
+          "count": 14,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1530.12
+        },
+        "none": {
+          "count": 50,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1524.28
+        },
+        "occlusion_heavy": {
+          "count": 21,
+          "exact_match_rate": 0.5714,
+          "mean_char_acc": 0.8891,
+          "escalation_count": 0,
+          "mean_latency_ms": 1481.96
+        },
+        "occlusion_light": {
+          "count": 20,
+          "exact_match_rate": 0.8,
+          "mean_char_acc": 0.9524,
+          "escalation_count": 1,
+          "mean_latency_ms": 1484.14
+        },
+        "scale_down": {
+          "count": 9,
+          "exact_match_rate": 0.6667,
+          "mean_char_acc": 0.9862,
+          "escalation_count": 0,
+          "mean_latency_ms": 1351.07
+        }
+      }
+    },
+    {
+      "name": "双层方案(无缓存)",
+      "sample_count": 150,
+      "exact_match_rate": 0.88,
+      "contains_match_rate": 0.88,
+      "mean_char_acc": 0.97,
+      "mean_cer": 0.03,
+      "mean_latency_ms": 1616.36,
+      "p50_latency_ms": 1455.61,
+      "p95_latency_ms": 3668.31,
+      "escalation_count": 10,
+      "cache_hit_count": 0,
+      "degraded_count": 0,
+      "error_count": 0,
+      "by_perturbation": {
+        "blur_heavy": {
+          "count": 11,
+          "exact_match_rate": 0.8182,
+          "mean_char_acc": 0.9005,
+          "escalation_count": 9,
+          "mean_latency_ms": 3580.4
+        },
+        "blur_light": {
+          "count": 17,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1412.4
+        },
+        "jpeg_low": {
+          "count": 8,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1504.6
+        },
+        "lowcontrast": {
+          "count": 14,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1388.08
+        },
+        "none": {
+          "count": 50,
+          "exact_match_rate": 1.0,
+          "mean_char_acc": 1.0,
+          "escalation_count": 0,
+          "mean_latency_ms": 1514.76
+        },
+        "occlusion_heavy": {
+          "count": 21,
+          "exact_match_rate": 0.5714,
+          "mean_char_acc": 0.8891,
+          "escalation_count": 0,
+          "mean_latency_ms": 1381.48
+        },
+        "occlusion_light": {
+          "count": 20,
+          "exact_match_rate": 0.8,
+          "mean_char_acc": 0.9524,
+          "escalation_count": 1,
+          "mean_latency_ms": 1535.37
+        },
+        "scale_down": {
+          "count": 9,
+          "exact_match_rate": 0.6667,
+          "mean_char_acc": 0.9862,
+          "escalation_count": 0,
+          "mean_latency_ms": 1348.09
+        }
+      }
+    }
+  ]
+}

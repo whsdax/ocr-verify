@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocr-verify"
+version = "0.1.0"
+description = "面向 UI 自动化测试的双层 OCR 断言基础设施"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+# 运行期最小依赖。OCR 引擎本身刻意不写在这里:
+# 第一层引擎(paddleocr / rapidocr)体积大且平台差异明显,
+# 由 requirements.txt 按环境安装,缺失时代码会走自动回落。
+dependencies = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "pillow>=10.0.0",
+    "requests>=2.31.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+paddle = ["paddleocr>=3.0.0", "paddlepaddle>=3.0.0"]
+rapid = ["rapidocr>=3.0.0; python_version >= '3.13'", "rapidocr-onnxruntime>=1.4.0; python_version < '3.13'"]
+tesseract = ["pytesseract>=0.3.10"]
+plot = ["matplotlib>=3.7.0"]
+dev = ["pytest>=7.4.0", "pytest-cov>=4.1.0"]
+
+[project.scripts]
+ocr-verify = "ocr_verify.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

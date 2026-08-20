@@ -1,0 +1,1052 @@
+{
+  "ui_000_dialog.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "raw/ui_000_dialog.png"
+  },
+  "ui_000_dialog__occlusion_heavy.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_000_dialog__occlusion_heavy.png"
+  },
+  "ui_000_dialog__scale_down.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_000_dialog__scale_down.png"
+  },
+  "ui_001_toast.png": {
+    "text": "保存成功",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "raw/ui_001_toast.png"
+  },
+  "ui_001_toast__lowcontrast.png": {
+    "text": "保存成功",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_001_toast__lowcontrast.png"
+  },
+  "ui_001_toast__occlusion_light.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_001_toast__occlusion_light.png"
+  },
+  "ui_002_form.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "raw/ui_002_form.png"
+  },
+  "ui_002_form__blur_light.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_002_form__blur_light.png"
+  },
+  "ui_002_form__scale_down.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_002_form__scale_down.png"
+  },
+  "ui_003_list.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "raw/ui_003_list.png"
+  },
+  "ui_003_list__blur_heavy.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_003_list__blur_heavy.png"
+  },
+  "ui_003_list__occlusion_light.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_003_list__occlusion_light.png"
+  },
+  "ui_004_order.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "raw/ui_004_order.png"
+  },
+  "ui_004_order__blur_heavy.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_004_order__blur_heavy.png"
+  },
+  "ui_004_order__occlusion_light.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_004_order__occlusion_light.png"
+  },
+  "ui_005_status.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "raw/ui_005_status.png"
+  },
+  "ui_005_status__occlusion_heavy.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_005_status__occlusion_heavy.png"
+  },
+  "ui_005_status__blur_light.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_005_status__blur_light.png"
+  },
+  "ui_006_error.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "raw/ui_006_error.png"
+  },
+  "ui_006_error__occlusion_heavy.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_006_error__occlusion_heavy.png"
+  },
+  "ui_006_error__blur_light.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_006_error__blur_light.png"
+  },
+  "ui_007_profile.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "raw/ui_007_profile.png"
+  },
+  "ui_007_profile__blur_heavy.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_007_profile__blur_heavy.png"
+  },
+  "ui_007_profile__scale_down.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_007_profile__scale_down.png"
+  },
+  "ui_008_progress.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "raw/ui_008_progress.png"
+  },
+  "ui_008_progress__jpeg_low.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_008_progress__jpeg_low.png"
+  },
+  "ui_008_progress__blur_light.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_008_progress__blur_light.png"
+  },
+  "ui_009_search.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "raw/ui_009_search.png"
+  },
+  "ui_009_search__blur_light.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_009_search__blur_light.png"
+  },
+  "ui_009_search__occlusion_light.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_009_search__occlusion_light.png"
+  },
+  "ui_010_camera.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "raw/ui_010_camera.png"
+  },
+  "ui_010_camera__blur_light.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_010_camera__blur_light.png"
+  },
+  "ui_010_camera__occlusion_heavy.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_010_camera__occlusion_heavy.png"
+  },
+  "ui_011_battery.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "raw/ui_011_battery.png"
+  },
+  "ui_011_battery__blur_heavy.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_011_battery__blur_heavy.png"
+  },
+  "ui_011_battery__occlusion_light.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_011_battery__occlusion_light.png"
+  },
+  "ui_012_dialog.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "raw/ui_012_dialog.png"
+  },
+  "ui_012_dialog__lowcontrast.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_012_dialog__lowcontrast.png"
+  },
+  "ui_012_dialog__blur_heavy.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_012_dialog__blur_heavy.png"
+  },
+  "ui_013_toast.png": {
+    "text": "保存成功",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "raw/ui_013_toast.png"
+  },
+  "ui_013_toast__occlusion_light.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_013_toast__occlusion_light.png"
+  },
+  "ui_013_toast__jpeg_low.png": {
+    "text": "保存成功",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_013_toast__jpeg_low.png"
+  },
+  "ui_014_form.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "raw/ui_014_form.png"
+  },
+  "ui_014_form__occlusion_light.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_014_form__occlusion_light.png"
+  },
+  "ui_014_form__jpeg_low.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_014_form__jpeg_low.png"
+  },
+  "ui_015_list.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "raw/ui_015_list.png"
+  },
+  "ui_015_list__lowcontrast.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_015_list__lowcontrast.png"
+  },
+  "ui_015_list__occlusion_heavy.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_015_list__occlusion_heavy.png"
+  },
+  "ui_016_order.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "raw/ui_016_order.png"
+  },
+  "ui_016_order__occlusion_light.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_016_order__occlusion_light.png"
+  },
+  "ui_016_order__blur_light.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_016_order__blur_light.png"
+  },
+  "ui_017_status.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "raw/ui_017_status.png"
+  },
+  "ui_017_status__scale_down.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_017_status__scale_down.png"
+  },
+  "ui_017_status__lowcontrast.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_017_status__lowcontrast.png"
+  },
+  "ui_018_error.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "raw/ui_018_error.png"
+  },
+  "ui_018_error__occlusion_heavy.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_018_error__occlusion_heavy.png"
+  },
+  "ui_018_error__blur_light.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_018_error__blur_light.png"
+  },
+  "ui_019_profile.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "raw/ui_019_profile.png"
+  },
+  "ui_019_profile__jpeg_low.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_019_profile__jpeg_low.png"
+  },
+  "ui_019_profile__blur_light.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_019_profile__blur_light.png"
+  },
+  "ui_020_progress.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "raw/ui_020_progress.png"
+  },
+  "ui_020_progress__occlusion_heavy.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_020_progress__occlusion_heavy.png"
+  },
+  "ui_020_progress__occlusion_light.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_020_progress__occlusion_light.png"
+  },
+  "ui_021_search.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "raw/ui_021_search.png"
+  },
+  "ui_021_search__occlusion_heavy.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_021_search__occlusion_heavy.png"
+  },
+  "ui_021_search__blur_light.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_021_search__blur_light.png"
+  },
+  "ui_022_camera.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "raw/ui_022_camera.png"
+  },
+  "ui_022_camera__occlusion_light.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_022_camera__occlusion_light.png"
+  },
+  "ui_022_camera__scale_down.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_022_camera__scale_down.png"
+  },
+  "ui_023_battery.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "raw/ui_023_battery.png"
+  },
+  "ui_023_battery__occlusion_light.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_023_battery__occlusion_light.png"
+  },
+  "ui_023_battery__blur_heavy.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_023_battery__blur_heavy.png"
+  },
+  "ui_024_dialog.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "raw/ui_024_dialog.png"
+  },
+  "ui_024_dialog__blur_heavy.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_024_dialog__blur_heavy.png"
+  },
+  "ui_024_dialog__occlusion_heavy.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_024_dialog__occlusion_heavy.png"
+  },
+  "ui_025_toast.png": {
+    "text": "保存成功",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "raw/ui_025_toast.png"
+  },
+  "ui_025_toast__occlusion_light.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_025_toast__occlusion_light.png"
+  },
+  "ui_025_toast__occlusion_heavy.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_025_toast__occlusion_heavy.png"
+  },
+  "ui_026_form.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "raw/ui_026_form.png"
+  },
+  "ui_026_form__jpeg_low.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_026_form__jpeg_low.png"
+  },
+  "ui_026_form__scale_down.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_026_form__scale_down.png"
+  },
+  "ui_027_list.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "raw/ui_027_list.png"
+  },
+  "ui_027_list__occlusion_light.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_027_list__occlusion_light.png"
+  },
+  "ui_027_list__lowcontrast.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_027_list__lowcontrast.png"
+  },
+  "ui_028_order.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "raw/ui_028_order.png"
+  },
+  "ui_028_order__occlusion_heavy.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_028_order__occlusion_heavy.png"
+  },
+  "ui_028_order__occlusion_light.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_028_order__occlusion_light.png"
+  },
+  "ui_029_status.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "raw/ui_029_status.png"
+  },
+  "ui_029_status__occlusion_light.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_029_status__occlusion_light.png"
+  },
+  "ui_029_status__blur_heavy.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_029_status__blur_heavy.png"
+  },
+  "ui_030_error.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "raw/ui_030_error.png"
+  },
+  "ui_030_error__occlusion_heavy.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_030_error__occlusion_heavy.png"
+  },
+  "ui_030_error__blur_light.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_030_error__blur_light.png"
+  },
+  "ui_031_profile.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "raw/ui_031_profile.png"
+  },
+  "ui_031_profile__occlusion_light.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_031_profile__occlusion_light.png"
+  },
+  "ui_031_profile__scale_down.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_031_profile__scale_down.png"
+  },
+  "ui_032_progress.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "raw/ui_032_progress.png"
+  },
+  "ui_032_progress__occlusion_heavy.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_032_progress__occlusion_heavy.png"
+  },
+  "ui_032_progress__blur_heavy.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_032_progress__blur_heavy.png"
+  },
+  "ui_033_search.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "raw/ui_033_search.png"
+  },
+  "ui_033_search__occlusion_light.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_033_search__occlusion_light.png"
+  },
+  "ui_033_search__occlusion_heavy.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_033_search__occlusion_heavy.png"
+  },
+  "ui_034_camera.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "raw/ui_034_camera.png"
+  },
+  "ui_034_camera__occlusion_light.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_034_camera__occlusion_light.png"
+  },
+  "ui_034_camera__jpeg_low.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_034_camera__jpeg_low.png"
+  },
+  "ui_035_battery.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "raw/ui_035_battery.png"
+  },
+  "ui_035_battery__blur_heavy.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_035_battery__blur_heavy.png"
+  },
+  "ui_035_battery__lowcontrast.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_035_battery__lowcontrast.png"
+  },
+  "ui_036_dialog.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "raw/ui_036_dialog.png"
+  },
+  "ui_036_dialog__jpeg_low.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_036_dialog__jpeg_low.png"
+  },
+  "ui_036_dialog__occlusion_heavy.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_036_dialog__occlusion_heavy.png"
+  },
+  "ui_037_toast.png": {
+    "text": "保存成功",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "raw/ui_037_toast.png"
+  },
+  "ui_037_toast__scale_down.png": {
+    "text": "保存成功",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_037_toast__scale_down.png"
+  },
+  "ui_037_toast__occlusion_light.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_037_toast__occlusion_light.png"
+  },
+  "ui_038_form.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "raw/ui_038_form.png"
+  },
+  "ui_038_form__occlusion_heavy.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_038_form__occlusion_heavy.png"
+  },
+  "ui_038_form__scale_down.png": {
+    "text": "用户名\nadmin@example.com\n密码\n登录",
+    "perturbation": "scale_down",
+    "source": "synthetic",
+    "kind": "form",
+    "relpath": "perturbed/ui_038_form__scale_down.png"
+  },
+  "ui_039_list.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "raw/ui_039_list.png"
+  },
+  "ui_039_list__blur_light.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_039_list__blur_light.png"
+  },
+  "ui_039_list__occlusion_heavy.png": {
+    "text": "设置\n账号与安全\n消息通知\n隐私\n关于",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "list",
+    "relpath": "perturbed/ui_039_list__occlusion_heavy.png"
+  },
+  "ui_040_order.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "raw/ui_040_order.png"
+  },
+  "ui_040_order__blur_light.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_040_order__blur_light.png"
+  },
+  "ui_040_order__occlusion_heavy.png": {
+    "text": "订单号 202608110037\n实付金额 ¥128.50\n待发货",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "order",
+    "relpath": "perturbed/ui_040_order__occlusion_heavy.png"
+  },
+  "ui_041_status.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "raw/ui_041_status.png"
+  },
+  "ui_041_status__lowcontrast.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_041_status__lowcontrast.png"
+  },
+  "ui_041_status__blur_heavy.png": {
+    "text": "设备已连接\n固件版本 v2.14.3\n电量 87%",
+    "perturbation": "blur_heavy",
+    "source": "synthetic",
+    "kind": "status",
+    "relpath": "perturbed/ui_041_status__blur_heavy.png"
+  },
+  "ui_042_error.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "raw/ui_042_error.png"
+  },
+  "ui_042_error__lowcontrast.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_042_error__lowcontrast.png"
+  },
+  "ui_042_error__blur_light.png": {
+    "text": "网络连接失败\n错误码 -1009\n请检查网络设置\n重试",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "error",
+    "relpath": "perturbed/ui_042_error__blur_light.png"
+  },
+  "ui_043_profile.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "raw/ui_043_profile.png"
+  },
+  "ui_043_profile__jpeg_low.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "jpeg_low",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_043_profile__jpeg_low.png"
+  },
+  "ui_043_profile__blur_light.png": {
+    "text": "个人中心\n会员等级 黄金\n积分 3280\n有效期至 2027-06-30",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "profile",
+    "relpath": "perturbed/ui_043_profile__blur_light.png"
+  },
+  "ui_044_progress.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "raw/ui_044_progress.png"
+  },
+  "ui_044_progress__lowcontrast.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_044_progress__lowcontrast.png"
+  },
+  "ui_044_progress__occlusion_heavy.png": {
+    "text": "正在上传\n45.2 MB / 128.0 MB\n剩余时间 00:32",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "progress",
+    "relpath": "perturbed/ui_044_progress__occlusion_heavy.png"
+  },
+  "ui_045_search.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "raw/ui_045_search.png"
+  },
+  "ui_045_search__blur_light.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_045_search__blur_light.png"
+  },
+  "ui_045_search__lowcontrast.png": {
+    "text": "搜索结果\n共找到 156 条记录\n按相关度排序",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "search",
+    "relpath": "perturbed/ui_045_search__lowcontrast.png"
+  },
+  "ui_046_camera.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "raw/ui_046_camera.png"
+  },
+  "ui_046_camera__lowcontrast.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_046_camera__lowcontrast.png"
+  },
+  "ui_046_camera__blur_light.png": {
+    "text": "拍摄模式\n4K 60fps\n剩余可拍 01:24:35\nISO 400",
+    "perturbation": "blur_light",
+    "source": "synthetic",
+    "kind": "camera",
+    "relpath": "perturbed/ui_046_camera__blur_light.png"
+  },
+  "ui_047_battery.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "raw/ui_047_battery.png"
+  },
+  "ui_047_battery__lowcontrast.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_047_battery__lowcontrast.png"
+  },
+  "ui_047_battery__occlusion_heavy.png": {
+    "text": "电池健康度 94%\n充电循环 218 次\n预计续航 6 小时",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "battery",
+    "relpath": "perturbed/ui_047_battery__occlusion_heavy.png"
+  },
+  "ui_048_dialog.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "raw/ui_048_dialog.png"
+  },
+  "ui_048_dialog__lowcontrast.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_048_dialog__lowcontrast.png"
+  },
+  "ui_048_dialog__occlusion_light.png": {
+    "text": "确认删除该文件?\n删除后无法恢复\n取消\n确定",
+    "perturbation": "occlusion_light",
+    "source": "synthetic",
+    "kind": "dialog",
+    "relpath": "perturbed/ui_048_dialog__occlusion_light.png"
+  },
+  "ui_049_toast.png": {
+    "text": "保存成功",
+    "perturbation": "none",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "raw/ui_049_toast.png"
+  },
+  "ui_049_toast__occlusion_heavy.png": {
+    "text": "保存成功",
+    "perturbation": "occlusion_heavy",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_049_toast__occlusion_heavy.png"
+  },
+  "ui_049_toast__lowcontrast.png": {
+    "text": "保存成功",
+    "perturbation": "lowcontrast",
+    "source": "synthetic",
+    "kind": "toast",
+    "relpath": "perturbed/ui_049_toast__lowcontrast.png"
+  }
+}

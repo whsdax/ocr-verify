@@ -1,0 +1,72 @@
+# OCR Verify 配置示例
+# 复制本文件为 config.yaml 并填入 API Key 即可运行
+# 注意:config.yaml 已加入 .gitignore,不要把密钥提交到仓库
+
+vlm:
+  enabled: true
+  # 协议三选一: gemini | openai | anthropic
+  #   gemini   -> Google 原生协议(/v1beta/models/...:generateContent),key 走 x-goog-api-key
+  #   openai   -> OpenAI 兼容协议(/chat/completions),key 走 Authorization: Bearer
+  #   anthropic-> Claude 原生协议,base_url 原样使用,key 走 x-api-key + anthropic-version
+  #
+  # 关于 api.claudecode.net.cn/api/gemini 这个中转网关的实测结论:
+  #   它认 x-goog-api-key / Authorization: Bearer / ?key=,但**不认** x-api-key。
+  #   用 anthropic 协议打这个地址会直接拿到 401 AUTH_MISSING(缺少认证凭证),
+  #   即使 key 本身是 sk-ant-api03- 形式也一样 —— key 的形状和网关认哪个请求头是两回事。
+  #   所以这个 base_url 必须配 gemini 协议。换厂商时改这一行即可。
+  protocol: gemini
+  base_url: "https://api.claudecode.net.cn/api/gemini"
+  # 模型名以中转站自己支持的清单为准,不要照抄 Google 官方名。
+  # 查可用模型:GET {base_url}/v1/models,头 x-goog-api-key: <你的 key>。
+  # 注意 supported_endpoint_types 为空的模型即使出现在列表里也不能调用
+  # (会返回 400 MODEL_PRICE_NOT_CONFIGURED)。
+  model: "gemini-3.5-flash"
+  # 真实 key 请写在 config.yaml(已被 .gitignore 忽略),不要写在本示例文件里 ——
+  # config.example.yaml 是要进仓库的,写在这里等于把密钥提交出去。
+  api_key: "YOUR_API_KEY_HERE"
+  timeout_s: 30
+  max_retries: 2
+  retry_backoff_s: 1.0
+  temperature: 0.0
+  max_output_tokens: 2048
+  max_image_width: 1600
+  jpeg_quality: 85
+
+paddle:
+  # backend 可选: auto / paddleocr / rapidocr
+  # auto 会优先尝试 paddleocr,失败则回落 rapidocr
+  backend: "auto"
+  lang: "ch"
+  use_gpu: false
+  det_db_thresh: 0.3
+  drop_score: 0.3
+
+router:
+  # 阈值需在你的数据集上跑 benchmark/calibrate.py 校准,这里只是起点
+  confidence_threshold: 0.7
+  escalate_on_empty: true
+  escalate_on_pattern_mismatch: true
+  escalate_on_box_overlap: true
+  box_overlap_threshold: 0.35
+  fallback_to_first_layer: true
+
+cache:
+  enabled: true
+  capacity: 512
+  # 默认关闭感知缓存。它只适合"同一页面反复截图,只有状态栏等局部像素变化"
+  # 的场景;跨页面数据集容易误命中。有经验后再开启。
+  use_perceptual: false
+  hamming_threshold: 3
+  dhash_size: 8
+  # 仅用于报告中的成本估算,按实际单价填写
+  vlm_cost_per_call: 0.003
+
+benchmark:
+  dataset_dir: "datasets"
+  report_dir: "reports"
+  ground_truth_file: "datasets/ground_truth.json"
+  random_seed: 42
+  # 如果本机未安装 Tesseract,设为 false 跳过基线对照
+  include_tesseract: false
+
+log_level: INFO
