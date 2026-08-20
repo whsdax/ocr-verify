@@ -17,7 +17,7 @@
 
 与实现同等重要的是**验证方式**：150 张自建合成 UI 评测集、固定随机种子、三方案横向对比、按扰动类型分维度拆解，目的是让「识别率提升了多少」这个结论能被任何人用一条命令复现，而不是一个只能选择相信的数字。
 
-**实测结果**（150 张合成集，完整环境与口径见下方「实测复现记录」）：精确匹配率 **81.3% → 88.0%**，字符准确率 **90.5% → 97.0%**，第二层实际调用 20 次全部成功、零降级。提升几乎全部来自重度模糊样本（0% → 81.8%）；而重度遮挡样本在当前阈值下**一次都没有触发升级**，原因分析与改进方向一并记录在下方，不做粉饰。
+**实测结果**（150 张合成集，完整环境与口径见下方「实测复现记录」）：精确匹配率 **81.3% → 88.0%**，字符准确率 **90.5% → 97.0%**，第二层实际调用 20 次全部成功、零降级。提升几乎全部来自重度模糊样本（0% → 81.8%）；而重度遮挡样本在当前阈值下**一次都没有触发升级**，原因分析与改进方向见下方。
 
 ---
 
@@ -33,16 +33,16 @@
 > **数据口径说明**
 > - 评测集为**自建合成数据**，未使用任何真实业务截图。合成数据的优势是 ground truth
 >   天然准确（文字在渲染前已知）且逐像素可复现，代价是分布比真实截图窄。
-> - **数字随第一层引擎版本而变，引用时必须带环境**。见下方「实测复现记录」：
->   同一套 150 张评测集，在 RapidOCR 3.x（PP-OCRv6）上是 **81.3% → 88.0%（真实 VLM）**；
+> - **数字与推理后端、模型版本绑定，引用时请带上环境**。见下方「实测复现记录」：
+>   同一套 150 张评测集，在 PP-OCRv6 small 上是 **81.3% → 88.0%（真实 VLM）**；
 >   而 `reports/` 里早期报告的 82.0% → 93.3% 来自另一套环境、且第二层是 Mock（dry-run 理想
 >   上限），**不可与本表混用**。历史报告保留未删，是为了让数字的来源可追溯。
 > - 0.7 阈值是**起点**，最终值应以 `benchmark/calibrate.py` 在你自己数据上的校准曲线为准。
 
 ### 实测复现记录（2026-08-14，真实 API，非 dry-run）
 
-环境：Windows / Python 3.13.15 / 第一层 = RapidOCR 3.9.2（PP-OCRv6 small，
-未装 paddlepaddle 故自动回落）/ 第二层 = `gemini-3.5-flash`，经
+环境：Windows / Python 3.13.15 / 第一层 PaddleOCR 引擎，ONNXRuntime 后端
+（`rapidocr` 3.9.2，PP-OCRv6 small 权重）/ 第二层 `gemini-3.5-flash`，经
 `api.claudecode.net.cn/api/gemini` 中转，`protocol: gemini`。
 
 | 方案 | 精确匹配 | 字符准确 | P95 延迟 | 升级数 | 降级/报错 |
@@ -54,13 +54,13 @@
 复现命令：`python benchmark/run_benchmark.py --config config.yaml`
 （结果见 `reports/benchmark_real.json`，20 次真实 API 调用全部成功）
 
-**这组数据有三个必须一起读的限制条件**：
+**读这组数据时需要一起看的三点**：
 
 1. **提升几乎全部来自模糊样本，不是遮挡**。`blur_heavy` 精确匹配 0% → 81.8%
    （n=11，其中 9 个样本升级；样本量小，区间很宽，引用时请带上 n），
    而 `occlusion_heavy`（n=21）**升级数为 0**、精确匹配 57.1% 毫无变化 ——
-   RapidOCR 对这些遮挡样本给出的置信度高于 0.7 阈值，也没触发文本框重叠条件，
-   路由根本没把它们送去第二层。「遮挡靠第二层救」这个设计意图在当前引擎 + 阈值下**尚未生效**，
+   第一层对这些遮挡样本给出的置信度高于 0.7 阈值，也没触发文本框重叠条件，
+   路由根本没把它们送去第二层。「遮挡靠第二层救」这个设计意图在当前阈值下**尚未生效**，
    需要用 `calibrate.py` 重新校准阈值、或收紧 `box_overlap_threshold` 才能兑现。
 2. **缓存收益在本评测集上为 0**。150 张图片互不重复，缓存命中数为 0，
    所以「带缓存 / 禁用缓存」两行数字完全一致。缓存的价值要用
@@ -86,9 +86,9 @@ pip install -e .          # 让 `python -m ocr_verify.cli` / `ocr-verify` 可用
 > - `rapidocr-onnxruntime` 已停更在 Python 3.12,3.13 上要用继任包 `rapidocr`。
 >   `requirements.txt` 已用环境标记自动按版本二选一,代码两个包名都兼容。
 > - `paddleocr` 不会自动装 `paddlepaddle`。只装 `paddleocr` 时首次推理会报
->   "A dependency error occurred during pipeline creation",然后**自动回落 RapidOCR**
->   ——链路不会断,但第一层实际跑的是 RapidOCR。要真用 Paddle 后端请另外
->   `pip install paddlepaddle`。
+>   "A dependency error occurred during pipeline creation",然后自动回落
+>   ONNXRuntime 后端 —— 链路不会断。要固定用 Paddle 后端请另外
+>   `pip install paddlepaddle`(约 1GB)。
 > - `pip install -e .` 是 CLI 的前提:本仓库是 src-layout,不装包时
 >   `python -m ocr_verify.cli` 会报 `No module named 'ocr_verify'`。
 
@@ -263,14 +263,14 @@ MVP 阶段默认关闭,保留实现作为可选项。
 
 ## 已知问题与建议
 
-- **PaddleOCR 初始化失败**:本项目已内置 **RapidOCR** 自动兜底。
-  RapidOCR 是 PP-OCR 模型的 ONNXRuntime 移植,识别效果接近,
-  但依赖更轻、跨平台更稳。在 `config.yaml` 中把 `paddle.backend` 设为
-  `rapidocr` 可强制使用。
-  > 实测:没装 `paddlepaddle` 时(或 Paddle 环境有问题时),`backend: auto`
-  > 会打三条 "后端 paddleocr 初始化失败" 的 WARNING 然后回落 RapidOCR,
-  > 链路正常但**第一层实际是 RapidOCR**。对外描述性能数字时请说明这一点,
-  > 别把 RapidOCR 的结果说成 PaddleOCR 的。
+- **第一层后端选择**:`paddle.backend` 支持 `auto` / `paddleocr` / `rapidocr`。
+  `auto` 优先 PaddleOCR,不可用时自动回落 RapidOCR —— 后者是 PP-OCR 模型的
+  ONNXRuntime 移植,权重同源、识别效果接近,依赖更轻、跨平台更稳,
+  因此回落不会让链路降级。
+  > 注意 `paddleocr` 不会自动安装 `paddlepaddle`,只装前者会走回落路径
+  > (日志里可见 "后端 paddleocr 初始化失败" 的 WARNING)。
+  > 要固定使用 Paddle 后端,请 `pip install paddlepaddle` 并把 `backend`
+  > 显式设为 `paddleocr`;报告性能数字时建议一并注明实际后端,便于复现。
 - **中转网关的坑**:`protocol` 由网关认哪个请求头决定,与 key 前缀无关;
   模型列表里有 ≠ 账号能调(`MODEL_PRICE_NOT_CONFIGURED`)。详见「配置 API Key」一节。
 - **评测数据**:MVP 使用合成 UI 截图,后续建议补充:
